@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Friend food </title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="cart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Friend food </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="menu.html">Danh sách món</a></li>
+                <li><a href="cart.html" class="active">Giỏ hàng</a></li>
+                <li><a href="order.html">Đơn hàng</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="login.html">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="featured">
+        <h2>Giỏ hàng của bạn</h2>
+        <div id="cartItems" class="cart-list"></div>
+        <div id="cartSummary">
+            <p><strong>Tổng cộng:</strong> <span id="totalPrice">0</span> VND</p>
+            <button onclick="checkout()">Đặt hàng</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Friend food . Thiết kế bởi Nhóm 26.</p>
+    </footer>
+</body>
+</html>

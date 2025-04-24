@@ -1,0 +1,44 @@
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt hàng & Theo dõi - Friend food </title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="order.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Friend food </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="menu.html">Danh sách món</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="order.html" class="active">Đơn hàng</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="login.html">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="featured">
+        <h2>Thông tin đặt hàng</h2>
+        <form id="orderForm">
+            <input type="text" id="name" placeholder="Họ tên" required>
+            <input type="text" id="address" placeholder="Địa chỉ nhận hàng" required>
+            <input type="tel" id="phone" placeholder="Số điện thoại" required>
+            <button type="submit">Xác nhận đặt hàng (COD)</button>
+        </form>
+    </section>
+
+    <section class="about">
+        <h2>Tra cứu đơn hàng</h2>
+        <input type="text" id="orderSearch" placeholder="Nhập số điện thoại để tra cứu">
+        <div id="orderResult"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Friend food . Thiết kế bởi Nhóm 26.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách món ăn - Friend food </title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Friend food </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="menu.html" class="active">Danh sách món</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="order.html">Đơn hàng</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="login.html">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="featured">
+        <h2>Danh sách món ăn</h2>
+
+        <div class="filters">
+            <input type="text" id="searchBox" placeholder="Tìm món ăn...">
+            <select id="filterCategory">
+                <option value="all">Tất cả loại</option>
+                <option value="main">Món chính</option>
+                <option value="side">Món phụ</option>
+                <option value="drink">Đồ uống</option>
+            </select>
+        </div>
+
+        <div class="food-grid" id="menuList">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FriendFriend. Thiết kế bởi Nhóm 26.</p>
+    </footer>
+</body>
+</html>
